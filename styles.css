@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg-desktop.svg);
+    object-fit: cover;
+    background-color: var(--Violet);
+    color: white;
+    display: flex;
+    height: 100vh;
+}
+header{
+    margin: 4%;
+    width: 93%;
+}
+section{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+}
+section img{
+    width: 93%;
+}
+.logo img{
+    display: block;
+    width: 182px;
+}
+article{
+    margin-top: 50px;
+    width: 34%;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 12px;
+}
+p, button{
+    font-family: 'Open Sans', sans-serif;
+}
+p{
+    line-height: 1.6;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 15px 52px;
+    border-radius: 50px;
+    margin-top: 15px;
+    color: var(--Violet);
+    background: #fff;
+    font-size: 15px;
+    box-shadow: 2px 5px 32px rgba(0, 0, 0, 0.5);
+}
+button:hover{
+    cursor: pointer;
+    background: var(--Soft-Magenta);
+    color: #fff;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 16px;
+    margin-bottom: 34px;
+}
+.fa-brands{
+    border: 1px solid white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.fa-brands:hover{
+    cursor: pointer;
+    color: var(--Soft-Magenta);
+    border: 1px solid var(--Soft-Magenta);
+}
+@media screen and (max-width:800px ){
+    body{
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        object-fit: contain;
+        height: auto;
+    }
+    .logo img{
+        width: 139px;
+        margin-bottom: 77px;
+        margin-top: 13px;
+        margin-left: 12px;
+    }
+    section{
+        flex-direction: column;
+        text-align: center;
+    }
+    article{
+        width: 83%;
+        margin: auto;
+    }
+    h1{
+        font-size: 23px;
+    }
+    button{
+        padding: 10px 80px;
+        margin-top: 27px;
+    }
+    .social{
+        margin-top: 90px;
+        justify-content: center;
+    }
+}   
