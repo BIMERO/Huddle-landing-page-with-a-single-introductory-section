@@ -118,4 +118,24 @@ button:hover{
         margin-top: 90px;
         justify-content: center;
     }
-}   
+}
+@media screen and (min-width:1400px){
+    body{
+        background-image: url(images/bg-desktop.svg);
+        height: auto;
+    }
+    .image{
+        width: 764px;
+    }
+    h1{
+        font-size: 41px;
+    }
+    .logo img{
+        width: 252px;
+        margin-bottom: 62px;
+    }
+    .fa-brands{
+        width: 40px;
+        height: 40px;
+    }
+}
